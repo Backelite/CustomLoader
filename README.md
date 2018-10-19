@@ -1,12 +1,12 @@
-[![Build Status](https://travis-ci.org/fritzgerald/CustomLoader.svg?branch=master)](https://travis-ci.org/fritzgerald/CustomLoader)
-[![CocoaPod](https://cocoapod-badges.herokuapp.com/v/CustomLoader/badge.png)](https://cocoapods.org/pods/CustomLoader)
-![supported platforms](https://cocoapod-badges.herokuapp.com/p/CustomLoader/badge.png)
-[![Twitter](https://img.shields.io/badge/twitter-@fmuiseroux-blue.svg)](https://twitter.com/fmuiseroux)
-
 ## Requirements
 * iOS 8.0+
 * Xcode 8.0+
-* Swift 3.0+
+* Swift 4.0+
+
+## Compatibility
+
+* Swift 3: use 1.0.0
+* Swift 4: use 1.1.0+
 
 ## Installation
 ### CocoaPods
@@ -25,7 +25,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'CustomLoader'
+    pod 'CustomLoader', :git => 'https://github.com/Backelite/CustomLoader.git'
 end
 
 ```
@@ -90,10 +90,3 @@ or
 ```swift
 LoadingView.myLoader.show(inView: view)
 ```
-## Screenshot
-
-![Exemple](https://github.com/fritzgerald/screenshots/raw/master/CustomLoader/Capture4.png)
-![Exemple](https://github.com/fritzgerald/screenshots/raw/master/CustomLoader/Capture5.png)
-![Exemple](https://github.com/fritzgerald/screenshots/raw/master/CustomLoader/Capture6.png)
-
-
