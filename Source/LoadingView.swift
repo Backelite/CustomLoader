@@ -137,7 +137,7 @@ public extension LoadingView {
      - Parameter animated: whether view should fade out before being removed form superview
      - Parameter completion: Handler called after the view is removed. If animation is false, this block is performed at the beginning of the next run loop cycle
      */
-    public class func removeLoadingViews(inView view: UIView, animated: Bool, completion: ((Void) -> Void)? = nil) {
+    public class func removeLoadingViews(inView view: UIView, animated: Bool, completion: (() -> Void)? = nil) {
         var loadingViews = [LoadingView]()
         view.subviews.forEach { view in
             if let loadingView = view as? LoadingView {
@@ -214,7 +214,7 @@ public extension UIView {
      - Parameter animated: whether view should fade out before being removed form superview
      - Parameter completion: Handler called after the view is removed. If animation is false, this block is performed at the beginning of the next run loop cycle
      */
-    public func removeLoadingViews(animated: Bool, completion: ((Void) -> Void)? = nil) {
+    public func removeLoadingViews(animated: Bool, completion: (() -> Void)? = nil) {
         LoadingView.removeLoadingViews(inView: self, animated: animated, completion: completion)
     }
 }
