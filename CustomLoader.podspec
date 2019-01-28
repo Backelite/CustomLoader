@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CustomLoader"
-  s.version      = "1.1.0"
+  s.version      = "1.2.0"
   s.summary      = "Custom loader system for iOS"
   s.description  = <<-DESC
                     Custom loader system for iOS that provide default loaders
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "MUISEROUX Fritzgerald" => "f.muiseroux@gmail.com" }
   s.platform     = :ios, '8.0'
-  s.source       = { :git => "https://github.com/Backelite/CustomLoader.git", :tag => "1.1.0" }
+  s.source       = { :git => "https://github.com/Backelite/CustomLoader.git", :tag => "1.2.0" }
   s.source_files  = "Source/", "Source/**/*.{h,m}"
 
 end
