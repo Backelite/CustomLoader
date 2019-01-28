@@ -1,12 +1,13 @@
 ## Requirements
 * iOS 8.0+
 * Xcode 8.0+
-* Swift 4.0+
+* Swift 4.2+
 
 ## Compatibility
 
 * Swift 3: use 1.0.0
-* Swift 4: use 1.1.0+
+* Swift 4: use 1.1.0
+* Swift 4.2: use 1.2.0+
 
 ## Installation
 ### CocoaPods

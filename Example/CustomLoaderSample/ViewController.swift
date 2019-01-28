@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         }
         
         timer = Timer(timeInterval: 1, target: self, selector: #selector(timerFire), userInfo: nil, repeats: true)
-        RunLoop.main.add(timer, forMode: .defaultRunLoopMode)
+        RunLoop.main.add(timer, forMode: .default)
         
         if let box = loader.progressBox {
             box.label.text = "Loading ..."
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func timerFire() {
+    @objc func timerFire() {
         if let box = loader.progressBox {
             if let ring = box.loaderView as? ProgressRingView {
                 self.value += 0.4

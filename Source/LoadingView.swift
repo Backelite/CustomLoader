@@ -178,8 +178,8 @@ public extension LoadingView {
      Loading view with a system activity indicator 
      - Parameter withStyle: Activity indicator style
      */
-    public static func system(withStyle style: UIActivityIndicatorViewStyle) -> LoadingView {
-        let loaderView = UIActivityIndicatorView(activityIndicatorStyle: style)
+    public static func system(withStyle style: UIActivityIndicatorView.Style) -> LoadingView {
+        let loaderView = UIActivityIndicatorView(style: style)
         loaderView.startAnimating()
         return LoadingView(loaderView: loaderView)
     }
@@ -188,7 +188,7 @@ public extension LoadingView {
      Loading view with a Progress Box containing system activity indicator
      - Parameter withStyle: Activity indicator style
      */
-    public static func systemBox(withStyle style: UIActivityIndicatorViewStyle) -> LoadingView {
+    public static func systemBox(withStyle style: UIActivityIndicatorView.Style) -> LoadingView {
         return LoadingView(loaderView: ProgressBoxView.system(withStyle: style))
     }
 }
